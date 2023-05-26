@@ -1,0 +1,324 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body {
+    background-color:#EFFFFC; 
+    
+      
+}
+
+        .exit {
+            display: flex;
+            background:url('../Imagenes/lector1.jpg');
+            height: 60px;
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            
+        }
+
+        .nombre-empresa {
+            color: white;
+            height: 70px;
+            font-size: 2em;
+            padding-inline-start: 12px;
+            margin-left: 8px;
+            margin-top: 12px;
+        }
+
+        .exi {
+           width: 40px;
+           margin-top: 8px;
+           margin-left: 650px;
+        }
+
+nav {
+    display: flex;
+    padding: 2px;
+}
+
+    .hora {
+        display: flex;
+        align-items: center;
+    }
+        .hora input{
+            margin-left: 12px;
+            height: 20px;
+            width: 70px;
+        }
+
+    .fecha {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+    }
+
+        .fecha input {
+            margin-left: 12px;
+            height: 20px;
+            width: 90px;
+        }
+
+    .venta {
+       
+        height: 30px;
+        width: 200px;
+        background-color: gray;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        margin-left: 70px;
+        
+    }
+        .venta h6 {
+            margin-left: 15px;
+            font-size: 1em;
+        }
+        
+    .perfil {
+        height: 30px;
+        width: 180px;
+        background-color: gray;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        margin-left: 200px;
+    }
+        .perfil h6 {
+            margin-left: 15px;
+            font-size: 1em;
+        }
+        .alea {
+            margin-left: 40px;
+        }
+
+    .adm {
+        display: flex;
+        align-items: center;
+        width: 390px;
+        margin-left: 120px;
+        font-size: 1em;
+        border: 1px black solid;
+        border-radius: 10px;
+    }
+
+    .nombres {
+        margin-left: 15px;
+        color: rgb(73, 69, 69);
+    }
+
+.info {
+    display: flex;
+    padding: 10px;
+}
+
+    .codigo {
+        display: flex;
+        align-items: center;
+        margin-left: 150px;
+        font-size: 1.3em;
+    }
+        .codigo input{
+            height: 30px;
+            width: 190px;
+            margin-left: 12px;
+            background-color: rgb(214, 110, 69);
+        }
+
+    .buscar {
+        display: flex;
+        align-items: center;
+        margin-left: 200px;
+        font-size: 1.3em;
+    }
+        .buscar input {
+            height: 30px;
+            width: 190px;
+            margin-left: 12px;
+            background-color: rgb(214, 110, 69);
+        }
+
+.metodo {
+    display: flex;
+    padding: 7px;
+    align-items: center;
+    font-size: 1.2em;
+}
+    .cantidad{
+        display: flex;
+        align-items: center;
+        border: 1px black solid;
+        border-radius: 12px;
+    }
+        .can {
+            width: 50px;
+            margin-left: 15px;
+            background-color: gray;
+            border: 1px black solid;
+            border-radius: 0 12px 12px 0px;
+            text-align: center;
+        }
+
+    .Blister {
+        margin-left: 30px;
+        border: 1px black solid;
+        border-radius: 12px;
+    }
+
+    .caja1 {
+        margin-left: 30px;
+        border: 1px black solid;
+        border-radius: 12px;
+    }
+
+    .Quitar {
+        margin-left: 30px;
+        border: 1px black solid;
+        border-radius: 12px;
+    }
+
+    .pago {
+        margin-left: 400px;
+        border-radius: 12px;
+    }
+
+    .efectivo {
+        display: flex;
+        align-items: center;
+        width: 150px;
+        margin-left: 60px;
+        border: 1px black solid;
+        border-radius: 12px;
+    }
+
+section {
+    width: 990px;
+    height: 400px;
+    background-color: beige;
+    float: left;
+}
+
+    table, th, td {
+        margin-left: 5px;
+        width: 980px;
+        border: 1px black solid;
+        border-collapse: collapse;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+    th, td {
+        padding: 5px;
+    }
+
+aside {
+    width: 345px;
+    height: 420px;
+    background-color: antiquewhite;
+    float: left;
+    margin-left: 12px;
+    
+}
+   
+    
+    .pagar {
+        margin-top: 10px;
+        margin-left: 80px;
+        font-size: 1em;
+    }
+
+        .pagar input {
+            margin-top: 10px;
+            height: 50px;
+        }
+
+    .paga {
+        margin-top: 20px;
+        margin-left: 80px;
+        font-size: 1em;
+    }
+    
+        .paga input {
+            margin-top: 10px;
+            height: 50px;
+        }
+
+    .cambio {
+        margin-top: 15px;
+        margin-left: 80px;
+        font-size: 1em;
+    }
+
+        .cambio input {
+            margin-top: 10px;
+            height: 50px;
+        }
+
+.cja {
+    width: 200px;
+    height: 120px;
+    margin-top: 9px;
+    margin-left: 60px;
+    border-radius: 10px;
+    border: 1px black solid;
+    text-align: center;
+}
+
+    .cja img{
+        margin-top: 4px;
+    }
+
+    .cja h4{
+        width: 170px;
+        height: 30px;
+        margin-top: 20px;
+        margin-left: 20px;
+        border-radius: 10px;
+        background-color: gray;
+        border: 1px black solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .imp {
+        width: 45px;
+    }
+footer {
+    float: left;
+}
+    footer h4 {
+    margin-left: 200px;
+}
+
+img {
+    width: 30px;
+}
+    .alea {
+        width: 20px;
+    }
+
+.imprimir {
+    display: flex;
+    align-items: center;
+}
+
+    .imprimir h4 {
+        height: 40px;
+        width: 150px;
+        font-size: 1em;
+        margin-left: 450px;
+        background-color: gray;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    
+    .sal  {
+        width: 50px;
+        margin-left: 200px;
+    }

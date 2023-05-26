@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/inventario.css"> 
+    <title>Inventario</title>
+</head>
+<body>
+    <header>
+        <div class="exit">
+            <h2 class="nombre-empresa">pharmacy Management - Agregar Productos </h2>
+            <a title="Salir" href="inicio.html"><img src="Imagenes/salir.jpg 1.jpg" class="exi" alt="salir" width="20px"></a>
+        </div>
+    </header>
+
+    <nav class="date">
+        <div class="hora">
+            <img src="Imagenes/reloj.png" alt="hora" width="50px">
+            <input  type="time">
+        </div>
+        <div class="fecha">
+            <img src="Imagenes/calendario.png" alt="calendario" width="50px">
+            <input  type="date">
+        </div>
+        <div class="venta">
+            <img src="Imagenes/boton-agregar.png" alt="agregar" width="25px">
+            <h6>Nueva Venta</h6>
+        </div>
+        <div class="perfil">
+            <img src="Imagenes/aleatorio.png" alt="aleatorio" width="10px">
+            <h6>Perfil</h6>
+            <img src="Imagenes/Raster.png" class="alea" alt="." width="20px">
+        </div>
+        <div class="adm">
+            <h4>Administrador:</h4>
+            <h4 class="nombres">Leider Riaño</h4>
+        </div>
+    </nav>
+
+    <div class="guardar">
+        <div class="guar">
+            <h4>Clic en imagen para cambiarlo</h4>
+            <img src="Imagenes/imagen.png" class="guardar1" alt="img">
+        </div>
+        <div class="save">
+            <h4>Guardar</h4>
+        </div>
+        <div class="cancelar">
+            <h4>Cancelar</h4>
+        </div>
+        <div class="invet">
+            <h2>Inventario</h2>
+        </div>
+        
+    </div>
+
+    <form class="agg">
+        <h4>Nombre:</h4>
+        <input type="text">
+        <br><br>
+        <h4>Código Invima:</h4>
+        <input type="number">
+        <br><br>
+        <h4>Código de Barras:</h4>
+        <input type="number">
+
+        <div class="precio">
+            <h4>Precio</h4>
+            <input type="number">
+        </div>
+        <div class="margen">
+            <h4>Margen %</h4>
+            <input type="number">
+        </div>
+        <div class="precio-publico">
+            <h4>Precio <br>Publico</h4>
+            <input type="number">
+        </div>
+        <div class="iva">
+            <h4>IVA %</h4>
+            <input type="number">
+        </div>
+        <div class="unidad-medida">
+            <h4>Unidad de <br> medida</h4>
+            <input type="number">
+        </div>
+
+        <div class="exis">
+            <div class="existencias">
+                <h4>Existencias</h4>
+                <input type="number">
+            </div>
+            <div class="prove">
+                <div class="provee">
+                    <h4>Proveedor</h4>
+                    <img src="Imagenes/boton-agregar.png" class="agre" alt="agregar">
+                </div>
+                    <input type="text">
+            </div>
+        </div>
+
+        <div class="maneja">
+            <div class="maneja-inv">
+                <h4>Maneja Inventario:</h4>
+                <label for="no" class="for1">No
+                <input type="radio" name="manejo" id="no">
+                </label>
+                <label for="si" class="fo1">Si
+                    <input type="radio" name="manejo" id="si"> 
+                </label>
+            </div>
+
+            <div class="maneja-lotes">
+                <h4>Maneja Lotes:</h4>
+                <label for="no1" class="for2">No
+                <input type="radio" name="lotes" id="no1">
+                </label>
+                <label for="si1" class="fo2">Si
+                    <input type="radio" name="lotes" id="si1"> 
+                </label>
+            </div>
+
+            <div class="maneja-ser">
+                <h4>Maneja Seriales:</h4>
+                <label for="no2" class="for3">No
+                <input type="radio" name="seriales" id="no2">
+                </label>
+                <label for="si2" class="fo3">Si
+                    <input type="radio" name="seriales" id="si2"> 
+                </label>
+            </div>
+
+            <div class="mostrar-farmacia">
+                <h4>Mostrar En Farmacia:</h4>
+                <label for="no3" >No
+                <input type="radio" name="mostrar" id="no3">
+                </label>
+                <label for="si3">Si
+                    <input type="radio" name="mostrar" id="si3"> 
+                </label>
+            </div>
+
+            <div class="vender-sin">
+                <h4>Vender Sin Existencia:</h4>
+                <label for="no4">No
+                <input type="radio" name="vender" id="no4">
+                </label>
+                <label for="si4">Si
+                    <input type="radio" name="vender" id="si4"> 
+                </label>
+            </div>
+        </div>
+
+    </form>
+
+    <aside class="agregar-productos">
+        <div class="cate">
+            <div class="categoria">
+                <img src="Imagenes/boton-agregar.png" alt="agregar">
+                <h4>Categoria</h4>
+            </div>
+
+            <div class="general">
+                <h4>General</h4>
+                <img src="Imagenes/Raster.png" class="des" alt="deslizar">
+            </div>
+
+            <div class="importar">
+                <h4>Importar</h4>
+            </div>
+
+            <div class="exportar">
+                <h4>Exportar</h4>
+            </div>
+
+            <div class="imprimir">
+                <h4>Imprimir</h4>
+            </div>
+        </div>
+
+        <table>
+            <tr>
+                <th>Código</th>
+                <th>Detalle de venta</th>
+                <th>Fecha</th>
+                <th>Cantidad</th>
+                <th>Medida</th>
+                <th>Valor</th>
+                <th>Total</th>
+            </tr>
+        </table>
+    </aside>
+</body>
+</html>

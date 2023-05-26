@@ -1,0 +1,390 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body {
+    background-color:#EFFFFC; 
+    
+      
+}
+
+        .exit {
+            display: flex;
+            background:url('../Imagenes/lector1.jpg');
+            height: 60px;
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            
+        }
+
+        .nombre-empresa {
+            color: white;
+            height: 70px;
+            font-size: 2em;
+            padding-inline-start: 12px;
+            margin-left: 8px;
+            margin-top: 12px;
+        }
+
+        .exi {
+           width: 40px;
+           margin-top: 8px;
+           margin-left: 650px;
+        }
+
+nav {
+    display: flex;
+    padding: 2px;
+}
+
+    .hora {
+        display: flex;
+        align-items: center;
+    }
+        .hora input{
+            margin-left: 12px;
+            height: 20px;
+            width: 70px;
+        }
+
+    .fecha {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+    }
+
+        .fecha input {
+            margin-left: 12px;
+            height: 20px;
+            width: 90px;
+        }
+
+    .venta {
+       
+        height: 30px;
+        width: 200px;
+        background-color: gray;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        margin-left: 70px;
+        
+    }
+        .venta h6 {
+            margin-left: 15px;
+            font-size: 1em;
+        }
+        
+    .perfil {
+        height: 30px;
+        width: 180px;
+        background-color: gray;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        margin-left: 200px;
+    }
+        .perfil h6 {
+            margin-left: 15px;
+            font-size: 1em;
+        }
+        .alea {
+            margin-left: 40px;
+        }
+
+    .adm {
+        display: flex;
+        align-items: center;
+        width: 390px;
+        margin-left: 120px;
+        font-size: 1em;
+        border: 1px black solid;
+        border-radius: 10px;
+    }
+
+    .nombres {
+        margin-left: 15px;
+        color: rgb(73, 69, 69);
+    }
+
+    img {
+        width: 30px;
+    }
+        .alea {
+            width: 20px;
+        }
+.guardar {
+    display: flex;
+    align-items: center;
+}
+.guar {
+    display: flex;
+    align-items: center;
+}
+    .guar h4 {
+        margin-left: 20px;
+        font-size: 1em;
+    }
+
+    .guardar1 {
+        width: 70px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+.save {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 90px;
+    background-color: rgb(21, 105, 150);
+    color: #EFFFFC;
+    margin-left: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cancelar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 90px;
+    background-color: red;
+    color: #EFFFFC;
+    margin-left: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.invet {
+    width: 150px;
+    height: 30px;
+    background-color: #137481;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+    .invet h2 {
+        margin-left: 20px;
+    }
+/* agg */
+
+form {
+    padding: 9px;
+    float: left;
+}
+
+.precio {
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+}
+    .precio input {
+        margin-left: 40px;
+        width: 90px;
+    }
+
+.margen {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+}
+    .margen input {
+        margin-left: 10px;
+        width: 89px;
+    }
+
+.precio-publico {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+}
+    .precio-publico input {
+        margin-left: 32px;
+        width: 89px;
+    }
+
+.iva {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+}
+    .iva input {
+        margin-left: 37px;
+        width: 89px;
+    }
+
+.unidad-medida {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+}
+.unidad-medida input {
+    margin-left: 11px;
+    width: 90px;
+}
+
+.exis {
+    display: flex;
+}
+    .existencias {
+        margin-top: 9px;
+    }
+        .existencias h4 {
+            text-align: center;
+        }
+        .existencias input {
+            width: 90px;
+        }
+
+    .prove {
+        margin-top: 9px;
+        margin-left: 3px;
+    }
+        .prove h4 {
+            text-align: center;
+        }
+        .prove input {
+            width: 90px;
+        }
+    .provee {
+        display: flex;
+        align-items: center;
+    }
+        .agre {
+            width: 15px;
+            cursor: pointer;
+        }
+
+.maneja {
+    padding: 3px;
+}
+    .maneja-inv {
+        display: flex;
+        align-items: center;
+    }
+        .for1 {
+            margin-left: 32px;
+        }
+        .fo1 {
+            margin-left: 10px;
+        }
+
+    .maneja-lotes {
+        display: flex;
+        align-items: center;
+    }
+        .for2 {
+            margin-left: 66px;
+        }
+        .fo2 {
+            margin-left: 10px;
+        }
+    
+    .maneja-ser {
+            display: flex;
+            align-items: center;
+    }
+        .for3 {
+                margin-left: 50px;
+        }
+        .fo3 {
+            margin-left: 10px;
+        }
+
+    .mostrar-farmacia {
+        display: flex;
+        align-items: center;
+    }
+        .mostrar-farmacia label {
+            margin-left: 10px;
+        }
+
+    .vender-sin {
+        display: flex;
+        align-items: center;
+    }
+        .vender-sin label {
+            margin-left: 10px;
+        }
+
+aside {
+    padding: 9px;
+    float: left;
+}
+    .cate {
+        display: flex;
+    }
+
+        .categoria {
+            display: flex;
+            align-items: center;
+            font-size: 1.2em;
+            margin-left: 150px;
+            background-color: #137481;
+            border: 1px black solid;
+        } 
+            .categoria h4 {
+                margin-left: 4px;
+            }
+    .general {
+        display: flex;
+        align-items: center;
+        font-size: 1.2em;
+        text-align: center;
+        background-color: #DAF1F7;
+        border: 1px black solid;
+    }
+        .des {
+            width: 20px;
+            margin-left: 9px;
+            cursor: pointer;
+        }
+
+    .importar {
+        width: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2em;
+        margin-left: 20px;
+        background-color: #DAF1F7;
+        border: 1px black solid;
+    }
+
+    .exportar  {
+        width: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2em;
+        margin-left: 20px;
+        background-color: #DAF1F7;
+        border: 1px black solid;
+    }
+
+    .imprimir {
+        width: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2em;
+        margin-left: 20px;
+        background-color: #DAF1F7;
+        border: 1px black solid;
+    }
+
+table , tr , th {
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 980px;
+    border: 1px black solid;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+        

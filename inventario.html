@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style/inventario.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!--Boostrap-->
+    
     <title>Inventario</title>
 </head>
+
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <header>
         <div class="exit">
-            <h2 class="nombre-empresa">pharmacy Management - Agregar Productos </h2>
+            <h2 class="nombre-empresa">Agregar Productos </h2>
             <a title="Salir" href="inicio.html"><img src="Imagenes/salir.jpg 1.jpg" class="exi" alt="salir" width="20px"></a>
         </div>
     </header>
@@ -39,69 +44,47 @@
         </div>
     </nav>
 
-    <div class="guardar">
-        <div class="guar">
-            <h4>Clic en imagen para cambiarlo</h4>
-            <img src="Imagenes/imagen.png" class="guardar1" alt="img">
-        </div>
-        <div class="save">
-            <h4>Guardar</h4>
-        </div>
-        <div class="cancelar">
-            <h4>Cancelar</h4>
-        </div>
-        <div class="invet">
-            <h2>Inventario</h2>
-        </div>
+    
+<!--formulario para agregar los productos-->
+
+    
+
+    <form action="" method="post">
+
+        <h4>Registro de Producto</h4>
+
+
+        <label for="nombre">Nombre del producto:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="descripcion">Descripción:</label><br>
+        <textarea id="descripcion" name="descripcion" required></textarea><br><br>
+
+        <label for="fecha">Fecha Vencimiento</label><br>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+
+        <label for="precio">Precio:</label><br>
+        <input type="number" id="precio" name="precio" step="0.01" required><br><br>
+
+        <label for="stock">Cantidad en stock:</label><br>
+        <input type="number" id="stock" name="stock" required><br><br>
         
-    </div>
+        <label for="categoria">Categoría:</label>
+        <select id="categoria" name="categoria" required>
+            <option value="aseo">Cuidado personal</option>
+            <option value="medicamento">Medicamento</option>
+            <option value=""></option>
+        </select><br><br>
 
-    <form class="agg">
-        <h4>Nombre:</h4>
-        <input type="text">
-        <br><br>
-        <h4>Código Invima:</h4>
-        <input type="number">
-        <br><br>
-        <h4>Código de Barras:</h4>
-        <input type="number">
+        <label for="imagen">Imagen del Producto:</label><br>
+        <input type="file" id="imagen" name="imagen" accept="image/*"><br><br>
 
-        <div class="precio">
-            <h4>Precio</h4>
-            <input type="number">
-        </div>
-        <div class="margen">
-            <h4>Margen %</h4>
-            <input type="number">
-        </div>
-        <div class="precio-publico">
-            <h4>Precio <br>Publico</h4>
-            <input type="number">
-        </div>
-        <div class="iva">
-            <h4>IVA %</h4>
-            <input type="number">
-        </div>
-        <div class="unidad-medida">
-            <h4>Unidad de <br> medida</h4>
-            <input type="number">
-        </div>
+        <input class="boton" type="submit" value="Registrar Producto">
 
-        <div class="exis">
-            <div class="existencias">
-                <h4>Existencias</h4>
-                <input type="number">
-            </div>
-            <div class="prove">
-                <div class="provee">
-                    <h4>Proveedor</h4>
-                    <img src="Imagenes/boton-agregar.png" class="agre" alt="agregar">
-                </div>
-                    <input type="text">
-            </div>
-        </div>
+    </form>
 
-        <div class="maneja">
+        <!--Se coloca en comentario para una version siguiente-->
+       <!--<div class="maneja">
             <div class="maneja-inv">
                 <h4>Maneja Inventario:</h4>
                 <label for="no" class="for1">No
@@ -151,7 +134,7 @@
                     <input type="radio" name="vender" id="si4"> 
                 </label>
             </div>
-        </div>
+        </div>-->
 
     </form>
 
@@ -183,13 +166,26 @@
         <table>
             <tr>
                 <th>Código</th>
-                <th>Detalle de venta</th>
+                <th>Nombre de producto</th>
+                <th>Descripcion</th>
                 <th>Fecha</th>
-                <th>Cantidad</th>
-                <th>Medida</th>
-                <th>Valor</th>
-                <th>Total</th>
+                <th>Precio</th>
+                <th>Cantidad Stock</th>
+                <th>Cateogoria</th>
+                <th>Imagen</th>
             </tr>
+            
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
         </table>
     </aside>
 </body>

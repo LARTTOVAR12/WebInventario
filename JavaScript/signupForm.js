@@ -39,4 +39,4 @@ signInForm.addEventListener("submit", async (e) => {
 });
 
 //usuario registrado en firebase 
-// correo: 3ideradri4n@gmail.com contraseña: 123456
+// correo: l3ideradri4n@gmail.com contraseña: 123456

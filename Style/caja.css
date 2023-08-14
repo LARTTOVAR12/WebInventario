@@ -326,3 +326,12 @@ img {
         margin-left: 150px;
         margin-top: 290px;
     }
+
+    /* camara */
+
+    #lectorCamara {
+        width: 65%; /* Ancho del div */
+        height: 480px; /* Altura del div */
+        border: 2px solid #1cc017; /* Borde del div */
+        margin: 10px; /* Margen alrededor del div */
+      }

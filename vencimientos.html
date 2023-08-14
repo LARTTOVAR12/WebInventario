@@ -18,7 +18,7 @@
     <nav class="date">
         <div class="hora">
             <img src="Imagenes/reloj.png" alt="hora" width="50px">
-            <input  type="time">
+            <h3 id="presentarHora"></h3>
         </div>
         <div class="fecha">
             <img src="Imagenes/calendario.png" alt="calendario" width="50px">
@@ -53,87 +53,51 @@
 
     <div class="fecha-actual">
         <div class="actual">
-            <h4>Fecha Actual</h4>
-        </div>
-        <div class="fech">
-            <h4>18/05/2023</h4>
+            <h4 id="fechaActual"></h4>
         </div>
     </div>
     <div class="ven">
-    <table class="vencimientos1">
-        <tr>
-            <th>Producto</th>
-            <th>Fecha Vencimiento</th>
-            <th>Estado</th>
-            <th>Dias a Vencer</th>
-            <th>Alerta</th>
-        </tr>
-        <tr>
-            <td>Noxpirin</td>
-            <td>12/06/2023</td>
-            <td>Vigente</td>
-            <td>24</td>
-            <td>Proximo a Vencer</td>
-        </tr>
-        <tr>
-            <td>Acetaminofén</td>
-            <td>12/05/2023</td>
-            <td class="vencido">Vencido</td>
-            <td class="menos">-8</td>
-            <td></td>
-        </tr>
-    </table>
+        <table id="tablaProductos">
+            <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Nombre</th>
+                  <th>Descripción</th>
+                  <th>Fecha Vencimiento</th>
+                  <th>Fecha Creación</th>
+                  <th>Precio</th>
+                  <th>Cantida Stock</th>
+                  <th>Categoria</th>
+                  <!-- Agrega más encabezados según tus datos -->
+                </tr>
+              </thead>
+              <tbody id="tbody">
+                <!-- Aquí se llenarán los datos -->
+              </tbody>
+
+        </table>
     </div>
-
+<!--Calendario-->
     <aside >
-        <div class="calenda">
-            <div class="cale">
-                <img src="Imagenes/flecha-izquierda.png" class="flecha" alt="atras">
-                <h2>Mayo 2023</h2>
-                <img src="Imagenes/flecha-correcta.png" class="flecha" alt="siguiente">
+        <div class="calendar">
+            <div class="cale_info">
+                <div class="calendario_prev" id="prev-month">&#9664;</div>
+                <div class="calendario_month" id="month"></div>
+                <div class="calendario_year" id="year"></div>
+                <div class="calendario_next" id="next-month">&#9654;</div>
             </div>
-            <ol>
-                <li class="day-name">Dom</li>
-                <li class="day-name">Lun</li>
-                <li class="day-name">Mar</li>
-                <li class="day-name">Mie</li>
-                <li class="day-name">Jue</li>
-                <li class="day-name">Vie</li>
-                <li class="day-name">Sab</li>
-
-                <li class="firts-day">1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
-                <li>7</li>
-                <li>8</li>
-                <li>9</li>
-                <li>10</li>
-                <li>11</li>
-                <li>12</li>
-                <li>13</li>
-                <li>14</li>
-                <li>15</li>
-                <li>16</li>
-                <li>17</li>
-                <li>18</li>
-                <li>19</li>
-                <li>20</li>
-                <li>21</li>
-                <li>22</li>
-                <li>23</li>
-                <li>24</li>
-                <li>25</li>
-                <li>26</li>
-                <li>27</li>
-                <li>28</li>
-                <li>29</li>
-                <li>30</li>
-                <li>31</li>
-            </ol>
-        </div>
+            
+            <div class="calendario_week">
+                <dvi class="Calendar_day calendar_item">Lun</dvi>
+                <dvi class="Calendar_day calendar_item">Mar</dvi>
+                <dvi class="Calendar_day calendar_item">Mie</dvi>
+                <dvi class="Calendar_day calendar_item">Jue</dvi>
+                <dvi class="Calendar_day calendar_item">Vie</dvi>
+                <dvi class="Calendar_day calendar_item">Sab</dvi>
+                <dvi class="Calendar_day calendar_item">Dom</dvi>
+            </div>
+            
+            <div class="calendar_dates" id="dates"></div>
 
         <div class="actualizar">
             <h2>Actualizar Datos</h2>
@@ -145,5 +109,9 @@
         </div>
     </aside>
 
+    <script src="JavaScript/calendario.js"></script>
+
 </body>
+<script src="./JavaScript/crud.js"></script>
+<script src="./JavaScript/fecha.js"></script>
 </html>

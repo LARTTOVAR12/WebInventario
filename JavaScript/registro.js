@@ -27,6 +27,7 @@ signupForm.addEventListener("submit", async (e) => {
     console.log(userCredentials);
       // se llama a showMessage para cuando digiten un dato no correpsondiente salga un mensaje
     showMessage("Datos guardados correctamente");
+    window.open(sesion);
 
   } catch (error) {
     // console.log(error.message);

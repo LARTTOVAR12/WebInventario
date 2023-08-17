@@ -167,11 +167,6 @@ nav {
     height: 450px;
 }
 
-.vencimientos1 {
-    float: left;
-    background-color: bisque;
-    width: 888px;
-}
 
     table , tr , th {
         padding: 5px;
@@ -195,7 +190,7 @@ nav {
 
 aside {
     float: left;
-    margin-left: 100px;
+    margin-left: 200px;
     /*background-color: bisque;*/
     width: 400px;
     height: 450px;
@@ -264,20 +259,7 @@ aside {
     
   
 
-.actualizar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    margin-left: 90px;
-    background-color: grey;
-    width: 200px;
-    height: 40px;
-    text-align: center;
-    border-radius: 10px;
-    border: 1px black solid;
-    cursor: pointer;
-}
+
 
 .descargar {
     display: flex;
@@ -286,7 +268,7 @@ aside {
     width: 200px;
     height: 40px;
     margin-top: 70px;
-    margin-left: 90px;
+    margin-left: 50px;
     text-align: center;
     align-items: center;
     background-color: gray;
@@ -294,4 +276,77 @@ aside {
     border: 1px black solid;
     cursor: pointer;
 }
+.descargar label {
+    font-size: 2em;
+}
+.descargar option {
+    font-size:20px;
+}
 
+
+#formularioEdicion {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    width: 20%;
+    height: 20%;
+    background-color: rgba(92, 88, 88, 0.9);
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.edicionFormulario {
+    text-align: center;
+}
+
+#btnGuardarEdicion {
+    margin-top: 10px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-align: center;
+    margin-left: 20%;
+}
+
+#btnCerrar {
+    margin-top: 10px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+
+.btnModificar {
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+/* Estilos para los iconos */
+.fas {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+/* botones de icono de excel y pdf */
+#botonExcel {
+    background-color: #ff5733;
+    border-radius: 8px;
+    font-size: 20px;
+    
+}
+
+#botonPDF {
+    background-color: #ff5733;
+    border-radius: 8px;
+    font-size: 20px;
+}

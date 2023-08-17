@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style/vencimientos.css"> 
+    <!--iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
     <title>Inventario</title>
 </head>
 <body>
@@ -57,17 +60,23 @@
         </div>
     </div>
     <div class="ven">
+        <button id="botonExcel" class="boton-descarga">
+            <i class="fas fa-file-excel"></i> Descargar Excel
+          </button>
+        
+          <button id="botonPDF" class="boton-descarga">
+            <i class="fas fa-file-pdf"></i> Descargar PDF
+          </button>
         <table id="tablaProductos">
             <thead>
                 <tr>
                   <th>ID</th>
                   <th>Nombre</th>
-                  <th>Descripción</th>
                   <th>Fecha Vencimiento</th>
                   <th>Fecha Creación</th>
-                  <th>Precio</th>
-                  <th>Cantida Stock</th>
-                  <th>Categoria</th>
+                  <th>Cantidad Stock</th>
+                  <th>Dias a vencer</th>
+                  <th></th>
                   <!-- Agrega más encabezados según tus datos -->
                 </tr>
               </thead>
@@ -76,7 +85,18 @@
               </tbody>
 
         </table>
+        <div id="formularioEdicion" style="display: none;">
+            <form class="edicionFormulario" method="put">
+            <h4>Editar Producto</h4>
+            <label for="fechaEditar">Fecha de Vencimiento:</label><br>
+            <input type="date" id="fechaEditar" name="fechaEditar" required><br><br>
+            
+            <button id="btnGuardarEdicion">Guardar Cambios</button>
+            <button id="btnCerrar">Cerrar</button>
+            </form>
+        </div>
     </div>
+
 <!--Calendario-->
     <aside >
         <div class="calendar">
@@ -99,19 +119,12 @@
             
             <div class="calendar_dates" id="dates"></div>
 
-        <div class="actualizar">
-            <h2>Actualizar Datos</h2>
-        </div>
-
-        <div class="descargar">
-            <h2>Descargar</h2>
-            <img src="Imagenes/Raster.png" class="alea" alt="." width="20px">
-        </div>
+        
     </aside>
 
     <script src="JavaScript/calendario.js"></script>
 
 </body>
-<script src="./JavaScript/crud.js"></script>
+<script src="./JavaScript/vencimientos.js"></script>
 <script src="./JavaScript/fecha.js"></script>
 </html>

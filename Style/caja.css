@@ -329,9 +329,9 @@ img {
 
     /* camara */
 
-    #lectorCamara {
-        width: 65%; /* Ancho del div */
-        height: 480px; /* Altura del div */
-        border: 2px solid #1cc017; /* Borde del div */
-        margin: 10px; /* Margen alrededor del div */
-      }
+    /* #lectorCamara {
+        width: 65%; 
+        height: 480px; 
+        border: 2px solid #1cc017; 
+        margin: 10px; 
+      } */

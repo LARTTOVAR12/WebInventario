@@ -29,6 +29,7 @@ miFormulario.addEventListener('submit', async (event) => {
 
     if (response.ok) {
       console.log('Formulario enviado exitosamente');
+      mostrarProductosEnTabla();
       
     } else {
       console.error('Error al enviar el formulario');
@@ -37,3 +38,4 @@ miFormulario.addEventListener('submit', async (event) => {
     console.error('Error en la petición:', error);
   }
 });
+mostrarProductosEnTabla();

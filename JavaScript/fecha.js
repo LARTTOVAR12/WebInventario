@@ -24,3 +24,12 @@ function mostarHoraActual () {
 // Llamar a la función para mostrar la hora
 mostarHoraActual();
 
+function mostrarNombre() {
+    // obtner el valor ingresado por el usuario
+    const nombre = document.getElementById("").value;
+
+    // Mostrar en pantalla el nombre de usuario 
+    const resutadoTextArea = document.getElementById("");
+    resutadoTextArea.value = nombre;
+};
+

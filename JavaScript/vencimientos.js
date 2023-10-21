@@ -1,4 +1,4 @@
-//función para traer el metodo get del backend
+ //función para traer el metodo get del backend
 const url = 'http://localhost:8080/api/v1/productos';
 
 
